@@ -4,16 +4,16 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="solicode"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-10-12 01:31:57 "/>
+        <attribute name="saved" value="2021-10-12 03:19:54 "/>
         <attribute name="created" value="c29saWNvZGU7REVTS1RPUC02TzhGRlZPOzIwMjEtMTAtMTI7IjAxOjA4OjIwICI7MzEwMg=="/>
-        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC02TzhGRlZPOzIwMjEtMTAtMTI7IjAxOjMxOjU3ICI7MTszMjE2"/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC02TzhGRlZPOzIwMjEtMTAtMTI7IjAzOjE5OjU0ICI7MjszMjIy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="x" type="Integer" array="False" size=""/>
             <declare name="y" type="Integer" array="False" size=""/>
-            <declare name="choix" type="String" array="False" size=""/>
+            <declare name="opp&#233;ration" type="String" array="False" size=""/>
             <declare name="add" type="Integer" array="False" size=""/>
             <declare name="div" type="Integer" array="False" size=""/>
             <declare name="multi" type="Integer" array="False" size=""/>
@@ -26,19 +26,19 @@
             <assign variable="div" expression="x/y"/>
             <assign variable="multi" expression="x*y"/>
             <assign variable="sus" expression="x-y"/>
-            <output expression="&quot;votre choix&quot;" newline="True"/>
+            <output expression="&quot;votre opp&#233;ration&quot;" newline="True"/>
             <input variable="choix"/>
-            <if expression="choix=&quot;+&quot;">
+            <if expression="opp&#233;ration=&quot;+&quot;">
                 <then>
                     <output expression="&quot;the answer is :&quot;&amp;add" newline="True"/>
                 </then>
                 <else>
-                    <if expression="choix=&quot;-&quot;">
+                    <if expression="opp&#233;ration=&quot;-&quot;">
                         <then>
                             <output expression="&quot;answer is :&quot;&amp;sus" newline="True"/>
                         </then>
                         <else>
-                            <if expression="choix=&quot;*&quot;">
+                            <if expression="opp&#233;ration=&quot;*&quot;">
                                 <then>
                                     <output expression="&quot;answer is :&quot;&amp;multi" newline="True"/>
                                 </then>
