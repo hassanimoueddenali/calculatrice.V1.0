@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-12 10:56:01 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC02TzhGRlZPOzIwMjEtMTAtMTI7IjEwOjI3OjI5ICI7MzExMg=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC02TzhGRlZPOzIwMjEtMTAtMTI7IjEwOjU2OjAxICI7MTszMjEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1, number2" type="Integer" array="False" size=""/>
+            <declare name="control" type="String" array="False" size=""/>
+            <assign variable="control" expression="&quot;&quot;"/>
+            <assign variable="number1" expression="0"/>
+            <assign variable="number2" expression="0"/>
+            <output expression="&quot;start = S, quiet = Q&quot;" newline="True"/>
+            <while expression="true">
+                <input variable="control"/>
+                <if expression="control == &quot;S&quot;">
+                    <then>
+                        <output expression="&quot;entre number&quot;" newline="True"/>
+                        <input variable="number1"/>
+                        <input variable="number2"/>
+                        <output expression="number1+number2" newline="True"/>
+                        <output expression="number1-number2" newline="True"/>
+                        <output expression="number1*number2" newline="True"/>
+                        <output expression="number1/number2" newline="True"/>
+                        <output expression="&quot;start = S,quit = Q&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="control == &quot;Q&quot;">
+                            <then>
+                                <output expression="&quot;Quit....&quot;" newline="True"/>
+                                <breakpoint/>
+                            </then>
+                            <else>
+                                <output expression="&quot;error: input again&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
